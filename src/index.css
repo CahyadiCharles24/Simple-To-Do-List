@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./assets/500px.jpeg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.to-do-list{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 100px auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0,0, .5);
+    padding: 10px 20px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    max-width: 850px;
+}
+
+h1{
+    font-size: 3.5rem;
+}
+
+button{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 2px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+input[type= "text"]{
+    font-size: 1.3rem;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input[type = "text"]:focus{
+    outline: none;
+}
+
+.input-container{
+    position: relative;
+    width: 90%;
+    max-width: 550px;
+}
+
+.btn_delete{
+    background-color: rgb(186, 26, 26);
+    color: white;
+}
+
+.btn_delete:hover{
+    background-color: hsl(0, 75%, 50%);
+    color: white;
+}
+
+.btn_move{
+    background-color: hsl(35, 98%, 60%);
+    color: white;
+}
+.btn_move:hover{
+    background-color: hsl(35, 98%, 45%);
+}
+
+.btn_add{
+    background-color: rgb(36, 171, 212);
+    color: white;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    aspect-ratio: 1;
+    border-radius: 0 5px 5px 0;
+}
+.btn_add:hover{
+    background-color: hsl(194, 71%, 40%);
+    color: white;
+}
+
+ol{
+    padding: 0;
+    /* list-style: none; */
+    width: 80%;
+}
+
+li{
+    display: flex;
+    font-size: 1.5rem;
+    padding: px;
+    font-weight: bold;
+    background-color: hsl(0, 0%, 97%);
+    margin-bottom: 10px;
+    border: 3px solid hsla(0, 0%, 85%, .7);
+    border-radius: 5px;
+    align-items: center;
+}
+
+.text{
+    flex: 1;
+}
+
+.btn_delete, 
+.btn_move{
+    padding: 2px 6px;
+    font-size: 1.2rem;
+    margin-left: 4px;
+}
